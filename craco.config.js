@@ -65,6 +65,17 @@ module.exports={
         plugins:[
             ['import',{libraryName:'antd',libraryDirectory:'es',style:'css'}],
             ['@babel/plugin-proposal-decorators',{legacy:true}]
+        ],
+        
+        //加载器配置
+        loaders: [
+            {
+            　　test: /\.jsx$/,
+            　　loader: 'babel-loader',
+            　　query: {
+            　　　　presets: ['react', 'es2015']
+            　　}
+            }
         ]
     },
     module:{

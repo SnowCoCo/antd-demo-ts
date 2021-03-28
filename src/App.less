@@ -1,9 +1,42 @@
+html,body{
+  margin:0;
+  padding:0;
+}
+@media only screen and (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1599px) and (min-width: 1280) {
+  html {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1279px) and (min-width: 960px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 959px) and (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 10px;
+  }
+}
+
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns:1fr 4fr 1fr;
+  grid-template-rows:10vh 70vh 20vh;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 40vmin; //vmin:视口中高度/宽度两者较小者
   pointer-events: none;
 }
 

@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../logo.svg';
+// import './Header.less';
 
 export default function Header() {
     return (
-        <div id="header-box">
-            
+        <div id="header-box" style={Style}>
+            123
         </div>
     )
 }
@@ -22,7 +23,10 @@ class HeaderLogo extends Component {
 }
 
 
-
+const Style={
+    color:'aqua',
+    background:'red'
+}
 
 
 // export default class Header extends Component {

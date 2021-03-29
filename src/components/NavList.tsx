@@ -1,5 +1,5 @@
 import React from 'react';
-import {hardCode} from '@/models/hardCode';
+import {hardCode} from '../models/hardCode';
 
 export default function NavList() {
     const navList=hardCode.navList.map((nav)=>

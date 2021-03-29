@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.less';
-import Header from './components/header/Header';
+import Header from './components/Header';
+import { hot } from 'react-hot-loader'; //热加载
 
 function App() {
   return (
@@ -10,4 +11,4 @@ function App() {
   );
 }
 
-export default App;
+export default hot(module)(App);

@@ -1,44 +1,37 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
-// import './Header.less';
+import NavList from './NavList';
 
 export default function Header() {
     return (
-        <div id="header-box" style={Style}>
-            123
+        <div style={headerStyle}>
+            <HeaderLogo></HeaderLogo>
+            <NavList></NavList>
         </div>
     )
 }
 
 
 
-class HeaderLogo extends Component {
+class HeaderLogo extends Component { //函数式组件，更专注于自身
     render() {
         return (
-            <div id="header-logo">
+            <div style={headerLogo}>
                 <img src={logo} alt="logo"/>
             </div>
         )
     }
 }
-
-
-const Style={
-    color:'aqua',
-    background:'red'
+const headerLogo={
+    width:'8vw',
 }
 
+const headerStyle={
+    display:'flex',
+    gridRow:'1/2',
+    gridColumn:'1/span 3',
+    alignItems:'center'
+}
 
-// export default class Header extends Component {
-//     render() {
-//         return (
-//             <div id="header-box">
-//                 <div id="header-logo"></div>
-//                 <div id="nav-list"></div>
-//                 <div id="lang-list"></div>
-//             </div>
-//         )
-//     }
-// }
 
 

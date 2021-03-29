@@ -1,7 +1,7 @@
 const CracoLessPlugin = require('craco-less');
 const path = require('path');
 const reactHotReloadPlugin = require('craco-plugin-react-hot-reload');//热加载
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+// const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -41,18 +41,18 @@ module.exports = {
             '@': path.resolve("src"),// 这样配置后 @ 可以指向 src 目录
             'react-dom': '@hot-loader/react-dom',
         },
-        plugins:[
-            new UglifyJsPlugin({
-                uglifyOptions: {
-                    compress: {
-                        warnings: false,
-                        drop_debugger: true,
-                        drop_console: true,
-                    },
-                },
-                sourceMap: false,
-                parallel: true,
-            }),
-        ]
+        // plugins:[
+        //     new UglifyJsPlugin({
+        //         uglifyOptions: {
+        //             compress: {
+        //                 warnings: false,
+        //                 drop_debugger: true,
+        //                 drop_console: true,
+        //             },
+        //         },
+        //         sourceMap: false,
+        //         parallel: true,
+        //     }),
+        // ]
     }
 };
